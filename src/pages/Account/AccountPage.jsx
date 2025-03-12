@@ -195,7 +195,7 @@ const AccountPage = () => {
             <div className="flex flex-col items-center">
               <div className="relative w-24 h-24 sm:w-32 sm:h-32 mb-4 z-0">
                 <img
-                  src={userInfo.profileImage || "/public/assets/images/default-avatar.jpg"}
+                  src={userInfo.profileImage || "/public/images/default-avatar.jpg"}
                   alt="Profile"
                   className="w-full h-full rounded-full border-4 border-indigo-500 object-cover relative z-50"
                 />

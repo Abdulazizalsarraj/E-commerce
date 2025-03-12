@@ -183,7 +183,7 @@ const Login = () => {
             >
               <div className="absolute inset-0 flex items-center justify-center p-8">
                 <motion.img
-                  src="/public/assets/images/login-illustration.svg"
+                  src="/public/images/login-illustration.svg"
                   alt="Login Illustration"
                   className="w-full h-full object-contain"
                   initial={{ y: -20 }}
