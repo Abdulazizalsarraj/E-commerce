@@ -95,7 +95,7 @@ const Navbar = ({ isOpen, setIsOpen, darkMode, toggleDarkMode }) => {
               className="ml-4 text-xl font-bold flex items-center"
             >
               <img
-                src="/public/images/02145.png"
+                src="/images/02145.png"
                 alt="Logo"
                 className="h-14 w-14 mr-2"
               />

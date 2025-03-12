@@ -207,7 +207,7 @@ const Register = () => {
             >
               <div className="absolute inset-0 flex items-center justify-center p-8">
                 <motion.img
-                  src="/public/images/login-illustration.svg"
+                  src="/images/login-illustration.svg"
                   alt="Register Illustration"
                   className="w-full h-full object-contain"
                   initial={{ y: -20 }}
