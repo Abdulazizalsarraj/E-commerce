@@ -349,9 +349,9 @@ const Home = () => {
             </div>
           </div>
         </section>
-
+          <div className='hidden sm:block'>
         <ARSection featuredProduct={featuredProducts[0]} darkMode={darkMode} />
-        
+        </div>
  
         <section className="relative py-20">
           <div className="container mx-auto px-4">
