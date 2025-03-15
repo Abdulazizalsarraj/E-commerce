@@ -45,7 +45,7 @@ const Login = () => {
   };
 
   return (
-    <div className="fixed inset-0 bg-gradient-to-br from-[#2A5470] to-[#4C4177] overflow-hidden">
+    <div className="fixed inset-0 bg-gradient-to-br from-[#2A5470] to-[#4C4177] overflow-y-auto">
       <motion.div
         className="absolute inset-0 overflow-hidden"
         initial={{ opacity: 0 }}
@@ -75,11 +75,11 @@ const Login = () => {
         ))}
       </motion.div>
 
-      <div className="relative z-10 h-screen flex items-center justify-center p-4">
-        <div className="bg-white/5 backdrop-blur-xl rounded-3xl shadow-2xl max-w-6xl w-full overflow-hidden h-[90vh]">
+      <div className="relative z-10 min-h-screen flex items-center justify-center p-4">
+        <div className="bg-white/5 backdrop-blur-xl rounded-3xl shadow-2xl max-w-6xl w-full overflow-hidden min-h-[90vh] lg:min-h-0">
           <div className="flex flex-col lg:flex-row h-full">
             <motion.div
-              className="flex-1 p-8 lg:p-12 flex flex-col justify-center"
+              className="flex-1 p-8 lg:p-12 flex flex-col justify-center overflow-y-auto"
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
@@ -93,7 +93,7 @@ const Login = () => {
                 Welcome Back
               </motion.h2>
 
-              <form onSubmit={handleSubmit} className="space-y-6 max-w-md mx-auto w-full">
+              <form onSubmit={handleSubmit} className="space-y-6 max-w-md mx-auto w-full pb-4">
                 <motion.div
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
@@ -142,7 +142,7 @@ const Login = () => {
               </form>
 
               <motion.div
-                className="mt-6 text-center"
+                className="mt-6 text-center pb-4"
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.8 }}
@@ -161,7 +161,7 @@ const Login = () => {
               </motion.div>
 
               <motion.div
-                className="mt-6 text-center"
+                className="mt-6 text-center pb-4 lg:pb-0"
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 1 }}
